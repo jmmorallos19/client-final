@@ -1,0 +1,883 @@
+@media screen and (max-width: 1024px ){ 
+    .aboutUs_div{
+        gap: 4rem;
+    }
+
+    .mission_vision_div{
+        gap: 2rem;
+    }
+
+    .mission_vision_div > div{
+        padding: 1.5rem;
+    }
+
+    .details_div{
+        width: 85%;
+    }
+
+    .services_container{
+        gap: 1rem;
+    }
+
+    .services_div{
+        padding: 3rem 0;
+        row-gap: 3rem;
+    }
+
+    .services_container > div{
+        padding: 2.5rem 2rem;
+    }
+
+    .contact_div{
+        row-gap: 4rem;
+        padding: 3rem 0;
+    }
+
+    .contact_title{
+        padding-bottom: 1rem;
+    }
+
+    .contact_info_div{
+        width: 90%;
+        flex-wrap: wrap;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .contact_info_div > div{
+        width: 25%;
+        padding: 1rem;
+        flex: 1 1 200px;
+    }
+
+    .contact_form_div{
+        width: 90%;
+        display: flex;
+        background-color: (246,246,246);
+        gap: .5rem;
+    }
+
+    .contact_form > div > button{
+        margin-top: 1.5rem;
+    }
+
+    .contact_form_div2{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        padding: .5rem;
+        padding-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .aboutUs_div{
+        padding: 2rem 0;
+    }
+
+    .navigation_div{
+        column-gap: 1.5rem;
+        padding-top: .7rem;
+    }
+
+    .navigation_div > a{
+        font-size: .8rem;
+    }
+
+    .navigation_div > p{
+        font-size: 1.1rem;
+    }
+
+    .greetings_div > h2{
+        font-size: 2.7rem;
+        margin-top: .7rem;
+    }
+
+    #welcome{
+        font-size: 1.3rem;
+        margin-bottom: .3rem;
+    }
+
+    #enjoy{
+        font-size: 1.1rem;
+        margin-bottom: .9rem;
+        margin-top: .7rem;
+    }
+
+    .btn_div > button{
+        font-size: 1.1rem;
+        padding: .7rem 1rem;
+    }
+
+    .mission_vision_div > div{
+        width: 250px;
+    }
+
+    .mission > h2, 
+    .vision > h2{
+        font-size: 2.1rem;
+    }
+
+    .mission > p, 
+    .vision > p{
+        font-size: 1.1rem;
+    }
+
+    .details_div{
+        width: 95%;
+        gap: 1rem;
+    }
+
+    .details_div > div{
+        padding: 1rem;
+    }
+
+    .services_container > div{
+        background: #fff;
+        padding: 2rem 1rem;
+    }
+
+    .service1_details, 
+    .services2_details{
+        display: flex;
+        column-gap: 1rem;
+        row-gap: 1.5rem;
+        width: 650px;
+        flex-direction: column;
+    }
+
+    .service1_details1, 
+    .service2_details1{
+        display: flex;
+        flex-direction: row;
+        row-gap: .5rem;
+        column-gap: 1rem;
+        justify-content: center;
+    }
+
+    .service1_details2, 
+    .service2_details2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 2.5rem;
+    }
+
+    .contact_div{
+        row-gap: 2rem;
+        padding: 2rem 0;
+    }
+    
+    .contact_form_div{
+        width: 90%;
+        display: flex;
+        background-color: (246,246,246);
+        column-gap: .5rem;
+        row-gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .contact_form_div > div{
+        width: 100%;
+    }
+
+    .contact_form_div1{
+        padding: 2rem 2.5rem;
+    }
+
+    .contact_form > div{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        row-gap: .3rem;
+    }
+
+    .feedback_div{
+        width: 400px;
+        max-height: 500px;
+        overflow: auto;
+    }
+
+    footer > div > h3{
+        font-size: 1.7rem;
+    }
+    
+    .footer_2{
+        column-gap: 1.7rem;
+    }
+    
+    footer > div > i{
+        font-size: 1.7rem;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    .toggle{
+        display: flex;
+        width: 100%;
+        padding: .5rem;
+        top: 0%;
+        position: fixed;
+        background: rgb(255, 255, 255, 90%);
+        z-index: 1;
+    }
+
+    body.menu-open .navigation_div {
+        left: 0;
+    }
+    
+    body.menu-open .toggle{
+        left: 260px;
+    }
+
+    .navigation_div{
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: -200px;
+        width: 200px;
+        height: 100%;
+        transition: left 0.3s ease;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding-left: 0;
+        cursor: pointer;
+
+    }
+
+    .navigation_div > p{
+        display: none;
+    }
+
+    .navigation_div > a{
+        font-size: .9rem;
+        text-decoration: none;
+        color: hsl(0, 0%, 90%);
+        font-family: var(--normal);
+        letter-spacing: .1rem;
+        transition: .2s;
+        margin-top: 2rem;
+        width: 135px;
+        padding: 1rem 2rem;
+        cursor: pointer;
+    }
+
+    .navigation_div > a:hover{
+        color: hsl(0, 0%, 100%);
+        font-size: 1rem;
+        background-color: rgba(255, 255, 255, 5%);
+    }
+    
+
+    #img1, #img3{
+        display: none;
+    }
+
+    .service1_details, 
+    .services2_details{
+        width: auto;
+    }
+
+    .services_container > div{
+        background: #fff;
+        padding: 1rem;
+    }
+
+    .greetings_div > h2{
+        font-size: 2.2rem;
+        margin-top: .7rem;
+    }
+
+    #welcome{
+        font-size: 1.1rem;
+        margin-bottom: .3rem;
+    }
+
+    #enjoy{
+        font-size: .8rem;
+        margin-bottom: .9rem;
+        margin-top: .7rem;
+    }
+
+    .formdiv_bg, .formdiv_bg1{
+        z-index: 3;
+        border-radius: 0;
+    }
+
+    .form{
+        width: 350px;
+        padding: 2rem 1.5rem 1.5rem 1rem;
+        row-gap: 1rem;
+    }
+    
+    #close{
+        width: 30px;
+        top: 2%;
+        right: 2.5%;
+    }
+
+    .form > div > input[type="text"]{
+        font-size: .9rem;
+    }
+
+    .form >  div > div > input[type="date"]{
+        font-size: .9rem;
+    }
+
+    .form > div > input::placeholder{
+        font-size: .9rem;
+    }
+
+    .form > div > div > select,
+    .form > div > .div2 > select{
+        font-size: .9rem;
+        padding: .3rem .5rem;
+    }
+
+    .form > button,
+    .payment_form > div > button{
+        width: 120px;
+        font-size: 1rem;
+    }
+
+    .payment_form{
+        width: 350px;
+        padding: 2rem 1.5rem 1.5rem 1rem;
+        row-gap: 1rem;
+    }
+
+    .payment_form_div1 > h3{
+        font-size: 1.2rem;
+    }
+
+    .payment_form_div1 > div > h2{
+        font-size: 1.1rem;
+    }
+
+    .payment_form_div4 > p{
+        font-size: 1rem;
+    }
+
+    .formdiv_bg2{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 53%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: black;
+        z-index: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(31, 28, 28, 0.42);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+
+    .success_div{
+        width: 250px;
+        background: rgba(255, 255, 255, 0.89);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
+        border-radius: 10px;
+        margin-right: 5.7rem;
+    }
+
+    .congrats > h2{
+        font-size: 1.8rem;
+    }
+    
+    .congrats > p{
+        font-size: .9rem;
+        text-align: center;
+    }
+    
+    .icon_div2 > div > button{
+        font-size: 1rem;
+    }
+    
+    .aboutUs_div{
+        padding-bottom: 0;
+    }
+
+    .mission > h2, 
+    .vision > h2{
+        font-size: 2rem;
+    }
+
+    .mission > p, 
+    .vision > p{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .details_div{
+        margin-inline: auto;
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        column-gap: 2rem;
+        align-items: center;
+    }
+
+    .img2_div, 
+    .details2_div,
+    .details2_div > h3,
+    .details2_div > p{
+        background: none;
+        display: none;
+    }
+
+    .img1_div{
+        width: 90%;
+        height: 300px;
+        padding: 0;
+    }
+
+    .title_div > h2,
+    .contact_title > h2{
+        font-size: 2.1rem;
+    }
+
+    .service1_title > h3,
+    .service2_title > h3{
+        font-size: 2.1rem;
+    }
+
+    .service1_info3 > p,
+    .service2_info3 > p{
+        display: none;
+    }
+
+    .service1_details2, 
+    .service2_details2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1rem;
+    }   
+
+    .service1_details1 > img, 
+    .service2_details1 > img{
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+    }
+    
+    .service1_details2 > div > h4, 
+    .service2_details2 > div > h4{
+        font-family: var(--elegant);
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin: 0;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: .3rem;
+    }
+
+    .service1_details2 > div > p, 
+    .service2_details2 > div > p{
+        font-family: var(--normal);
+        font-size: .9rem;
+        word-wrap: break-word;
+        margin: 0;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    .services_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services1, 
+    .services2{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        border-radius: 24px;
+        flex: 0 0 0;
+        width: 350px;
+    }
+
+    .services1 > button,
+    .services2 > button{
+        width: 180px;
+        font-size: .9rem;
+    }
+
+    .contact_info_div{
+        width: 60%;
+        height: 30%;
+        display: flex;
+    }
+
+    .contact_icon1 > span, .contact_icon2 > span,
+    .contact_icon3 > span, .contact_icon4 > span{
+        color: #fff;
+        font-size: 1.1rem;
+    }
+
+    .contact_details1 > p, .contact_details2 > p,
+    .contact_details3 > p, .contact_details4 > p{
+        font-family: var(--normal);
+        text-align: center;
+        font-size: 1rem;
+        color: #413e3e;
+        word-wrap: break-word;
+    }
+
+    .contact_details1 > p > span, .contact_details2 > p > span,
+    .contact_details3 > p > span, .contact_details4 > p > span{
+        font-size: 1rem;
+        color: #000;
+    }
+
+    .contact_form > div > button{
+        width: 170px;
+        font-size: .9rem;
+    }
+
+    .feedback_name > h3{
+        font-size: 1rem;
+    }
+
+    .feedback > p{
+        font-size: .8rem;
+    }
+
+    footer{
+        padding: 1.5rem 0;
+        row-gap: 1rem;
+    }
+
+    footer > div > h3{
+        font-size: 1.6rem;
+    }
+
+    footer > div > i{
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .greetings_div > h2{
+        font-size: 1.9rem;
+        margin-top: .4rem;
+    }
+
+    #welcome{
+        font-size: 1.1rem;
+        margin-bottom: .3rem;
+    }
+
+    #enjoy{
+        font-size: .8rem;
+        margin-bottom: .9rem;
+        margin-top: .7rem;
+        opacity: 0;
+    }
+
+    .aboutUs_div{
+        padding-top: 1rem;
+        row-gap: 2rem;
+    }
+
+    .mission_vision_div{
+        row-gap: 1rem;
+    }
+
+    .mission_vision_div > div{
+        padding: .8rem;
+    }
+
+    .details_div{
+        width: 75%;
+        flex-direction: column-reverse;
+        row-gap: 1rem;
+    }
+
+    .img1_div{
+        width: 90%;
+        height: 250px;
+    }  
+
+    .services_div{
+        padding: 2rem 0;
+        row-gap: 1.5rem;
+    }
+
+    .title_div > h2{
+        font-size: 1.8rem;
+        letter-spacing: .1rem;
+    }
+
+    .services1, 
+    .services2{
+        display: flex;
+        flex-direction: column;
+        row-gap: .5rem;
+        border-radius: 24px;
+        flex: 0 0 0;
+        width: 270px;
+    }
+
+    .service1_details1 > img, 
+    .service2_details1 > img{
+        width: 150px;
+        height: 150px;
+        border-radius: 20px;
+    }
+    
+    .service1_details2 > div > h4, 
+    .service2_details2 > div > h4{
+        font-family: var(--elegant);
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin: 0;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: .3rem;
+    }
+
+    .service1_details2 > div > p, 
+    .service2_details2 > div > p{
+        font-family: var(--normal);
+        font-size: .8rem;
+        word-wrap: break-word;
+        margin: 0;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    .service1_title > h3,
+    .service2_title > h3{
+        font-size: 1.9rem;
+    }
+
+    .service1_details2, 
+    .service2_details2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: .5rem;
+    }   
+
+    .services1 > button,
+    .services2 > button{
+        font-size: .9rem;
+        padding: .8rem .9rem;
+        width: 150px;
+        margin-top: .7rem;
+    }
+
+    .contact_title > h2{
+        font-size: 1.9rem;
+    }
+
+    .contact_icon1, .contact_icon2,
+    .contact_icon3, .contact_icon4{
+        padding: 1rem;
+    }
+
+    .contact_icon1{
+        padding: 1rem 1.3rem;
+    }
+
+    .contact_icon2{
+        padding: 1rem 1.1rem;
+    }
+
+    .contact_form_div{
+        row-gap: .5rem;
+    }
+
+    .contact_icon1 > span, .contact_icon2 > span,
+    .contact_icon3 > span, .contact_icon4 > span{
+        font-size: 1.1rem;
+    }
+
+    .contact_details1 > p, .contact_details2 > p,
+    .contact_details3 > p, .contact_details4 > p{
+        font-size: .9rem;
+    }
+
+    .contact_details1 > p > span, .contact_details2 > p > span,
+    .contact_details3 > p > span, .contact_details4 > p > span{
+        font-size: 1rem;
+    }
+
+    .contact_form > div > button{
+        width: 150px;
+        font-size: .8rem;
+    }
+
+    .feedback1{
+        flex-wrap: 1 0 350px;
+        word-wrap: break-word;
+        margin: 0px;
+        width: 200px;
+    }
+
+    .feedback_div{
+        max-height: 500px;
+        width: 80%;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: .8rem;
+        row-gap: .8rem;
+    }
+
+    .feedback_name > h3{
+        font-size: .9rem;
+    }
+    
+    .feedback > p{
+        font-size: .8rem;
+    }
+
+    footer{
+        padding: 1rem 0;
+        row-gap: 1rem;
+    }
+
+    footer > div > h3{
+        font-size: 1.4rem;
+    }
+
+    footer > div > i{
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .feedback1{
+        flex-wrap: 1 0 350px;
+        word-wrap: break-word;
+        margin: 0px;
+        width: 250px;
+        padding: 1rem .5rem;  
+    }
+
+    .feedback_div{
+        max-height: 500px;
+        width: 100%;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: .8rem;
+        row-gap: .8rem;
+    }
+
+    .form{
+        width: 250px;
+        padding: 2rem 1.5rem 1.5rem 1rem;
+        row-gap: 1rem;
+    }
+    
+    #close{
+        width: 30px;
+        top: 2%;
+        right: 2.5%;
+    }
+
+    .form > div > input[type="text"]{
+        font-size: .8rem;
+    }
+
+    .form >  div > div > input[type="date"]{
+        font-size: .8rem;
+    }
+
+    .form > div > input::placeholder{
+        font-size: .8rem;
+    }
+
+    .form > div > div > select,
+    .form > div > .div2 > select{
+        font-size: .8rem;
+        padding: .3rem .5rem;
+    }
+
+    .form > button,
+    .payment_form > div > button{
+        width: 110px;
+        font-size: .9rem;
+    }
+
+    .date_div2, 
+    .roomtype_guest{
+        column-gap: 1.5rem;
+    }
+
+    .payment_form{
+        width: 250px;
+        padding: 2rem 1.5rem 1.5rem 1rem;
+        row-gap: .9rem;
+    }
+
+    .payment_form_div1 > h3{
+        font-size: 1.1rem;
+    }
+
+    .payment_form_div1 > div > h2{
+        font-size: 1rem;
+    }
+
+    .payment_form_div4 > p{
+        font-size: .9rem;
+    }
+
+    .success_div{
+        width: 200px;
+        background: rgba(255, 255, 255, 0.89);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
+        border-radius: 10px;
+        margin-right: 5.7rem;
+    }
+
+    .congrats > h2{
+        font-size: 1.7rem;
+    }
+    
+    .congrats > p{
+        font-size: .8rem;
+        text-align: center;
+    }
+    
+    .icon_div2 > div > button{
+        font-size: .9rem;
+    }
+    
+
+}
